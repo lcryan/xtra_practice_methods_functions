@@ -11,21 +11,23 @@
 //3.Wir brauchen also innerhalb der Funktion eine Methode, die das wiederholen kann. In diesem Fall concat und push. Vielleicht sogar eine Kombo?
 
 const emailadresses = ['n.eeken@novi.nl', 'n.stuivenberg@novi.nl', 'm.vandergeest@novi-education.nl', 'a.wiersma@novi.nl'];
-
-function updatedMailList(mail, maillist) {
+console.log(emailadresses.concat("m.westerbroek@novi.nl"));
+const updatedMailList = function (mail, maillist) {
     return emailadresses.concat(mail, maillist)
 }
 
-let newMail = "m.westerbroek@novi.nl";
-let newList = ["mariah@bol.com", "kevin@asml.com", "lucia@mammu.com"];
+let newMail = "mn.stuivenberg@novi.nl";
+let newList = ["mariah@bol.com", "kevin@restauranttakumi.com", "lucia@mammu.com"];
 console.log(updatedMailList(newMail, newList))
 
 
-/* Opdracht 2 */
-// 2a. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit! Zijn emailadres is n.stuivenberg@novi.nl
+// /* Opdracht 2 */
+// // 2a. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit! Zijn emailadres is n.stuivenberg@novi.nl
+console.log(updatedMailList().includes("n.stuivenberg@novi.nl"));
+// // 2b. Schrijf een herbruikbare functie die een email-lijst en achternaam verwacht. Wanneer er een emailadres met die achternaam voorkomt, wordt het emailadres teruggegeven.
+// // Als er niets wordt gevonden, returnt de functie null.
+// wir braucen eine funktion mit einem for-loop und einer methode, die den nachnamen aufsuchen kann und einem if else statement.
 
-// 2b. Schrijf een herbruikbare functie die een email-lijst en achternaam verwacht. Wanneer er een emailadres met die achternaam voorkomt, wordt het emailadres teruggegeven.
-// Als er niets wordt gevonden, returnt de functie null.
 
 /* Opdracht 3 */
 // 3a. Collega's staan in de emaillijst op volgorde waarin ze bij Novi zjin komen werken. Nu blijkt echter dat een andere nieuwe collega, Tess,
