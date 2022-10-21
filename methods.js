@@ -1,12 +1,27 @@
 // We hebben een array met e-mailaddressen van medewerkers in ons systeem.
-
-const emailadresses = ['n.eeken@novi.nl', 'n.stuivenberg@novi.nl', 'm.vandergeest@novi-education.nl', 'a.wiersma@novi.nl'];
-
 /* Opdracht 1 */
 // 1a. Onze nieuwe medewerker Melissa moet worden toegevoegd aan de lijst met emailadressen. Haar email is: m.westerbroek@novi.nl.
 
 // 1b. Er zullen ongetwijfeld vaker emailadressen toegevoegd moeten worden. Binnen het bedrijf zijn er echter lijsten voor medewerkers,
 // maar ook voor studenten. Schrijf een herbruikbare functie die een email-lijst en nieuw-emailadres verwacht en deze vervolgens toevoegt aan die lijst.
+
+//Scriptplan:
+//1. Funktion bauen mit 2 parametern : email Adresse und Email Adressenliste.
+//2. Neue Emailadressen und ganze Emailadressenlisten muessen zum array wiederholt hinzugefuegt werden koennen - die Mailadressen muessen dann also nicht direkt in die Funktion gesetzt werden !!!
+//3.Wir brauchen also innerhalb der Funktion eine Methode, die das wiederholen kann. In diesem Fall
+
+const emailadresses = ['n.eeken@novi.nl', 'n.stuivenberg@novi.nl', 'm.vandergeest@novi-education.nl', 'a.wiersma@novi.nl'];
+
+
+function newColleagues(emailList, emailAdress) {
+    let actualList = emailadresses.concat(newList);
+    // let actualEmail = emailadresses.push(newMail);
+    return actualList
+}
+
+let newList = ["lcryan06@gmail.com", "mcryan@novi.nl", "mariahcarey@bol.com"];
+
+console.log(newColleagues(newList))
 
 /* Opdracht 2 */
 // 2a. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit! Zijn emailadres is n.stuivenberg@novi.nl
