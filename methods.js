@@ -8,20 +8,18 @@
 //Scriptplan:
 //1. Funktion bauen mit 2 parametern : email Adresse und Email Adressenliste.
 //2. Neue Emailadressen und ganze Emailadressenlisten muessen zum array wiederholt hinzugefuegt werden koennen - die Mailadressen muessen dann also nicht direkt in die Funktion gesetzt werden !!!
-//3.Wir brauchen also innerhalb der Funktion eine Methode, die das wiederholen kann. In diesem Fall
+//3.Wir brauchen also innerhalb der Funktion eine Methode, die das wiederholen kann. In diesem Fall concat und push. Vielleicht sogar eine Kombo?
 
 const emailadresses = ['n.eeken@novi.nl', 'n.stuivenberg@novi.nl', 'm.vandergeest@novi-education.nl', 'a.wiersma@novi.nl'];
 
-
-function newColleagues(emailList, emailAdress) {
-    let actualList = emailadresses.concat(newList);
-    // let actualEmail = emailadresses.push(newMail);
-    return actualList
+function updatedMailList(mail, maillist) {
+    return emailadresses.concat(mail, maillist)
 }
 
-let newList = ["lcryan06@gmail.com", "mcryan@novi.nl", "mariahcarey@bol.com"];
+let newMail = "m.westerbroek@novi.nl";
+let newList = ["mariah@bol.com", "kevin@asml.com", "lucia@mammu.com"];
+console.log(updatedMailList(newMail, newList))
 
-console.log(newColleagues(newList))
 
 /* Opdracht 2 */
 // 2a. Jouw collega wil weten of het emailadres van Nick Stuivenberg in de lijst staat. Zoek dit voor hem uit! Zijn emailadres is n.stuivenberg@novi.nl
